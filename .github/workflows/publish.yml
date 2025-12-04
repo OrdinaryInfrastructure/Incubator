@@ -8,7 +8,6 @@ on:
   workflow_dispatch:
 
 env:
-  SOLUTION: './Invubator.sln'
   BUILD_CONFIGURATION: Release
   PACKAGE_DIR: Packaging
   NUGET_SOURCE: https://api.nuget.org/v3/index.json
