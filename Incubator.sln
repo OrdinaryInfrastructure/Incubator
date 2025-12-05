@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Cryptography", "Crypto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Email.SMTP", "Email\SMTP\Odin.Email.SMTP.csproj", "{379EBA18-DB45-4444-9FE9-075855855B7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Notifications", "Notifications\Odin.Notifications.csproj", "{21F3C428-EF30-4FB9-8074-D8F3E710FB83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,5 +47,9 @@ Global
 		{379EBA18-DB45-4444-9FE9-075855855B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{379EBA18-DB45-4444-9FE9-075855855B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{379EBA18-DB45-4444-9FE9-075855855B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F3C428-EF30-4FB9-8074-D8F3E710FB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F3C428-EF30-4FB9-8074-D8F3E710FB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F3C428-EF30-4FB9-8074-D8F3E710FB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F3C428-EF30-4FB9-8074-D8F3E710FB83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
