@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4F52FD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Utility.RecordEnum", "Utility\RecordEnum\Odin.Utility.RecordEnum.csproj", "{47543FFE-EFF5-4865-A031-D1D72EC7EB09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Experimental", "Experimental\Odin.Experimental.csproj", "{87F83295-0119-4AF5-8852-E6704116BD91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Miscellaneous", "Miscellaneous\Odin.Miscellaneous.csproj", "{87F83295-0119-4AF5-8852-E6704116BD91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Odin.Experimental", "Tests.Odin.Experimental\Tests.Odin.Experimental.csproj", "{93A24B1D-A3B0-446F-834B-DA5CC956ED07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Odin.Miscellaneous", "Tests.Odin.Miscellaneous\Tests.Odin.Miscellaneous.csproj", "{93A24B1D-A3B0-446F-834B-DA5CC956ED07}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Cryptography", "Cryptography\Odin.Cryptography.csproj", "{FA5D93D3-2A98-4A4E-8BFD-F1941A47175B}"
 EndProject

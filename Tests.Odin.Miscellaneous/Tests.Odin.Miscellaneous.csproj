@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Experimental\Odin.Experimental.csproj" />
+    <ProjectReference Include="..\Miscellaneous\Odin.Miscellaneous.csproj" />
   </ItemGroup>
 
 </Project>

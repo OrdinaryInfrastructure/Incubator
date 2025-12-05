@@ -2,7 +2,6 @@
 using System.Collections.Concurrent;
 using Odin.Email;
 using Odin.Logging;
-using Odin.System;
 
 namespace Odin.EmailQueueing;
 

@@ -2,7 +2,7 @@
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace Odin.Logging.ApplicationInsights
+namespace Odin.Telemetry.ApplicationInsights
 {
     /// <summary>
     /// Filter out css, js, and image Request telemetry from AppInsights

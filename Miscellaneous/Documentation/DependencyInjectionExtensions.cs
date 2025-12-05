@@ -1,6 +1,7 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Odin.Documentation
 {
     /// <summary>
     /// Dependency injection methods to add member documentation

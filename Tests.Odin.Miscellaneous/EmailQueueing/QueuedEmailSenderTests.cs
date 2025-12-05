@@ -6,7 +6,6 @@ using Odin;
 using Odin.Email;
 using Odin.EmailQueueing;
 using Odin.Logging;
-using Odin.System;
 
 namespace Tests.Odin.EmailQueueing;
 
