@@ -1,4 +1,6 @@
-﻿namespace Odin.Cryptography
+﻿using Odin.System;
+
+namespace Odin.Cryptography
 {
     /// <summary>
     /// Cryptography settings 
