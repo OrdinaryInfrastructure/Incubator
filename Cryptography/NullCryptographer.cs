@@ -6,7 +6,7 @@ namespace Odin.Cryptography
     /// <summary>
     /// Both TryDecrypt and TryEncrypt return the input string and always return true.
     /// </summary>
-    public sealed class FakeCryptographer : ICryptographer
+    public sealed class NullCryptographer : ICryptographer
     {
 
         /// <summary>

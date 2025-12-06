@@ -4,6 +4,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <PackageIcon>icon.png</PackageIcon>
+    <Description>Originally intended as a wrapper for ordinary use cases around .NET DataProtection APIs.
+    Provides a simple ICryptographer concept supporting Encrypt and Decrypt.</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="9.0.9" />

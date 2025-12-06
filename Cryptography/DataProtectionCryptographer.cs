@@ -5,11 +5,11 @@ using Odin.System;
 namespace Odin.Cryptography
 {
     /// <summary>
-    /// 
+    /// Uses the .NET DataProtection APIs to encrypt and decrypt using IDataProtector.
     /// </summary>
     public sealed class DataProtectionCryptographer : ICryptographer
     {
-        IDataProtector _protector;
+        private readonly IDataProtector _protector;
         private ILogger2<DataProtectionCryptographer> _logger;
 
         /// <summary>
@@ -17,10 +17,11 @@ namespace Odin.Cryptography
         /// </summary>
         /// <param name="provider"></param>
         /// <param name="logger"></param>
-        public DataProtectionCryptographer(IDataProtectionProvider provider, ILogger2<DataProtectionCryptographer> logger)
+        /// <param name="purpose"></param>
+        public DataProtectionCryptographer(IDataProtectionProvider provider, ILogger2<DataProtectionCryptographer> logger, string purpose = "Default")
         {
             _logger = logger;
-            _protector = provider.CreateProtector("Default");
+            _protector = provider.CreateProtector(purpose);
         }
 
         /// <summary>

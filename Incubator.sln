@@ -6,7 +6,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{4F52FD
 		nuget.config = nuget.config
 		.github\workflows\publish.yml = .github\workflows\publish.yml
 		Directory.Build.props = Directory.Build.props
-		.github\workflows\pr-validation.yml = .github\workflows\pr-validation.yml
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odin.Utility.RecordEnum", "Utility\RecordEnum\Odin.Utility.RecordEnum.csproj", "{47543FFE-EFF5-4865-A031-D1D72EC7EB09}"

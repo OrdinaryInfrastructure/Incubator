@@ -36,7 +36,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             if (settings.Provider == Providers.FakeCryptographer)
             {
-                serviceCollection.AddSingleton<ICryptographer, FakeCryptographer>();
+                serviceCollection.AddSingleton<ICryptographer, NullCryptographer>();
             }
             else if (settings.Provider == Providers.DataProtectionCryptographer)
             {

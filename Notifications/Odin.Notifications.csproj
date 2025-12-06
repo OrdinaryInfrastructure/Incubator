@@ -4,6 +4,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <PackageIcon>icon.png</PackageIcon>
+    <Description>
+      
+    </Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Odin.Email" Version="0.2.14" />
