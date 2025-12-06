@@ -1,5 +1,6 @@
 ﻿using Odin.DesignContracts;
 using Odin.Logging;
+using Odin.System;
 
 namespace Odin.Email
 {
@@ -10,7 +11,7 @@ namespace Odin.Email
     {
         private readonly SmtpEmailSenderOptions _smtpOptions;
         private readonly EmailSendingOptions _emailSettings;
-        private readonly ILogger2<SmtpEmailSender> _logger;
+        private readonly ILoggerWrapper<SmtpEmailSender> _logger;
 
         /// <summary>
         /// Constructor
@@ -19,7 +20,7 @@ namespace Odin.Email
         /// <param name="emailSettings"></param>
         /// <param name="logger"></param>
         public SmtpEmailSender(SmtpEmailSenderOptions smtpOptions,
-            EmailSendingOptions emailSettings, ILogger2<SmtpEmailSender> logger)
+            EmailSendingOptions emailSettings, ILoggerWrapper<SmtpEmailSender> logger)
         {
             PreCondition.RequiresNotNull(smtpOptions);
             PreCondition.RequiresNotNull(emailSettings);

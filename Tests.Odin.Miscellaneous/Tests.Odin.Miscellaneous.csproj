@@ -12,10 +12,12 @@
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.0" />
+    <PackageReference Include="Odin.Email.Mailgun" Version="0.4.13" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Miscellaneous\Odin.Miscellaneous.csproj" />
+    <ProjectReference Include="..\Notifications\Odin.Notifications.csproj" />
   </ItemGroup>
 
 </Project>

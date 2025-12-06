@@ -6,6 +6,7 @@ using Odin;
 using Odin.Email;
 using Odin.EmailQueueing;
 using Odin.Logging;
+using Odin.System;
 
 namespace Tests.Odin.EmailQueueing;
 
@@ -19,7 +20,7 @@ public class QueuedEmailSenderTests
     public void Setup()
     {
         _mockEmailSender = new Mock<IEmailSender>();
-        _sut = new QueuedEmailSender(_mockEmailSender.Object, new Mock<ILogger2<QueuedEmailSender>>().Object);
+        _sut = new QueuedEmailSender(_mockEmailSender.Object, new Mock<ILoggerWrapper<QueuedEmailSender>>().Object);
         _messages = new List<IEmailMessage>();
         for (int i = 0; i < 10; i++)
         {
@@ -148,7 +149,7 @@ public class QueuedEmailSenderTests
                 return ResultValue<string>.Succeed("");
             });
 
-        QueuedEmailSender parallelSut = new QueuedEmailSender(_mockEmailSender.Object, new Mock<ILogger2<QueuedEmailSender>>().Object, 10);
+        QueuedEmailSender parallelSut = new QueuedEmailSender(_mockEmailSender.Object, new Mock<ILoggerWrapper<QueuedEmailSender>>().Object, 10);
         
         Stopwatch stopwatch = new Stopwatch();
         List<Task<IQueuedEmailSender.SendOutcome>> taskList = new List<Task<IQueuedEmailSender.SendOutcome>>();

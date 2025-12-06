@@ -10,7 +10,7 @@ namespace Odin.Cryptography
     public sealed class DataProtectionCryptographer : ICryptographer
     {
         private readonly IDataProtector _protector;
-        private ILogger2<DataProtectionCryptographer> _logger;
+        private ILoggerWrapper<DataProtectionCryptographer> _logger;
 
         /// <summary>
         /// Default constructor
@@ -18,7 +18,7 @@ namespace Odin.Cryptography
         /// <param name="provider"></param>
         /// <param name="logger"></param>
         /// <param name="purpose"></param>
-        public DataProtectionCryptographer(IDataProtectionProvider provider, ILogger2<DataProtectionCryptographer> logger, string purpose = "Default")
+        public DataProtectionCryptographer(IDataProtectionProvider provider, ILoggerWrapper<DataProtectionCryptographer> logger, string purpose = "Default")
         {
             _logger = logger;
             _protector = provider.CreateProtector(purpose);

@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using Odin.Email;
 using Odin.Logging;
+using Odin.System;
 
 namespace Odin.EmailQueueing;
 
@@ -17,7 +18,7 @@ public interface IQueuedEmailSender
     }
 }
 
-public class QueuedEmailSender(IEmailSender emailSender, ILogger2<QueuedEmailSender> logger, int emailSendingParallelism = 1): IQueuedEmailSender
+public class QueuedEmailSender(IEmailSender emailSender, ILoggerWrapper<QueuedEmailSender> logger, int emailSendingParallelism = 1): IQueuedEmailSender
 {
     
     private readonly SemaphoreSlim _sendSemaphore = new SemaphoreSlim(emailSendingParallelism);

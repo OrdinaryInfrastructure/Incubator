@@ -9,7 +9,7 @@
     </Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Odin.Email" Version="0.2.14" />
+    <PackageReference Include="Odin.Email" Version="0.4.13" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icon.png" Pack="true" PackagePath="" />

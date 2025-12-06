@@ -8,7 +8,7 @@
         <WarningsAsErrors>1591;1573;</WarningsAsErrors> <!-- Not to be removed. Documentation is required. -->
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="Odin.System.Result" Version="0.4.6" />
+      <PackageReference Include="Odin.System.Result" Version="0.4.13" />
     </ItemGroup>
     <ItemGroup>
         <None Include="icon.png" Pack="true" PackagePath="" />

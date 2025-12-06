@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi;
 
-namespace Odin.Documentation
+// ReSharper disable once CheckNamespace
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
     /// Dependency injection methods to add member documentation
     /// </summary>
-    public static class DocumentationExtensions
+    public static class DependencyInjectionExtensions
     {
         /// <summary>
         /// Sets up FluentEmail to from configuration...
@@ -16,8 +16,8 @@ namespace Odin.Documentation
         /// <param name="appVersion"></param>
         /// <param name="xmlDocsPath"></param>
         /// <returns></returns>
-        public static void AddSwaggerDocumentation(
-            this IServiceCollection serviceCollection, string appName, string appVersion, string xmlDocsPath ="Documentation" )
+        public static void AddOdinSwaggerDocumentation(
+            this IServiceCollection serviceCollection, string appName, string appVersion, string xmlDocsPath = "Documentation" )
         {
             DirectoryInfo docFolder =
                 new DirectoryInfo(Path.Combine(AppContext.BaseDirectory, xmlDocsPath));

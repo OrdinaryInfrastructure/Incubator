@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Odin.DesignContracts;
+using Odin.System;
 
 namespace Odin.Email
 {
@@ -18,7 +19,7 @@ namespace Odin.Email
             {
                 throw new ApplicationException($"Invalid {nameof(SmtpEmailSenderOptions)}: {validationResult.MessagesToString()}");
             }
-            serviceCollection.AddLogger2();
+            serviceCollection.AddOdinLoggerWrapper();
             serviceCollection.TryAddSingleton(smtpOptions);
             serviceCollection.TryAddTransient<IEmailSender, SmtpEmailSender>();
         }
